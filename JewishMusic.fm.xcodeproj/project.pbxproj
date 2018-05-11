@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E37136030E6DF1B4DD49CEF /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB35C52D8ADAC90985AA1610 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		8433AB7020A0F47200FDF999 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433AB6F20A0F47200FDF999 /* NotificationService.swift */; };
+		8433AB7420A0F47300FDF999 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8433AB6D20A0F47200FDF999 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		844FCB172091C6E0005E72C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FCB162091C6E0005E72C8 /* AppDelegate.swift */; };
+		844FCB192091C6E0005E72C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FCB182091C6E0005E72C8 /* ViewController.swift */; };
+		844FCB1C2091C6E0005E72C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844FCB1A2091C6E0005E72C8 /* Main.storyboard */; };
+		844FCB1E2091C6E1005E72C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844FCB1D2091C6E1005E72C8 /* Assets.xcassets */; };
+		844FCB212091C6E1005E72C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844FCB1F2091C6E1005E72C8 /* LaunchScreen.storyboard */; };
+		844FCB2E2091C824005E72C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 844FCB302091C824005E72C8 /* Localizable.strings */; };
+		844FCB332091CDB5005E72C8 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FCB322091CDB5005E72C8 /* LeftMenuViewController.swift */; };
+		844FCB352091CEC1005E72C8 /* RecentAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FCB342091CEC1005E72C8 /* RecentAlbumsViewController.swift */; };
+		844FCB372091D6D9005E72C8 /* LeftMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FCB362091D6D9005E72C8 /* LeftMenuTableViewCell.swift */; };
+		844FCB392091E3F7005E72C8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FCB382091E3F7005E72C8 /* SettingsViewController.swift */; };
+		844FCB3B2091E688005E72C8 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FCB3A2091E687005E72C8 /* ArtistsViewController.swift */; };
+		844FCB3D2091E691005E72C8 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FCB3C2091E691005E72C8 /* GenresViewController.swift */; };
+		844FCB3F2091E69E005E72C8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FCB3E2091E69E005E72C8 /* FavoritesViewController.swift */; };
+		8465E6C1209B829000E48CC5 /* AVAudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465E6C0209B829000E48CC5 /* AVAudioPlayerViewController.swift */; };
+		8475E3B7209DC11B006A2849 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475E3B6209DC11B006A2849 /* SettingTableViewCell.swift */; };
+		8475E3B9209DC23F006A2849 /* SettingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475E3B8209DC23F006A2849 /* SettingObject.swift */; };
+		84B4723B209247FF0097D566 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4723A209247FF0097D566 /* Constants.swift */; };
+		84B4723D209250C20097D566 /* AlbumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4723C209250C20097D566 /* AlbumInfo.swift */; };
+		84B4723F20925A620097D566 /* AlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4723E20925A620097D566 /* AlbumsTableViewCell.swift */; };
+		84B472442092C6E80097D566 /* PullDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B472422092C6E80097D566 /* PullDataTableViewCell.swift */; };
+		84B472452092C6E80097D566 /* PullDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B472432092C6E80097D566 /* PullDataTableViewCell.xib */; };
+		84B4724D2092CD910097D566 /* ArtistsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4724C2092CD910097D566 /* ArtistsTableViewCell.swift */; };
+		84B472512092D0340097D566 /* ArtistInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B472502092D0340097D566 /* ArtistInfo.swift */; };
+		84B472532092D5880097D566 /* GenreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B472522092D5880097D566 /* GenreInfo.swift */; };
+		84B472552092D7140097D566 /* GenresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B472542092D7140097D566 /* GenresTableViewCell.swift */; };
+		84B472572092DC960097D566 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B472562092DC960097D566 /* AlbumDetailViewController.swift */; };
+		84B4725920933EE30097D566 /* AlbumDetailInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4725820933EE30097D566 /* AlbumDetailInfo.swift */; };
+		84B4725B209359CA0097D566 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4725A209359CA0097D566 /* TrackTableViewCell.swift */; };
+		84BA8DF2209C63CF009914A8 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA8DF1209C63CF009914A8 /* AudioPlayer.swift */; };
+		84BA8DF4209D595E009914A8 /* PreferenceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA8DF3209D595E009914A8 /* PreferenceUtils.swift */; };
+		84FB0C462096AE1B002A63C6 /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0C452096AE1B002A63C6 /* ArtistDetailViewController.swift */; };
+		84FB0C482096B9E4002A63C6 /* GenreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0C472096B9E4002A63C6 /* GenreDetailViewController.swift */; };
+		84FB0C4A2096BFDB002A63C6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0C492096BFDB002A63C6 /* SearchViewController.swift */; };
+		84FB0C4C20971860002A63C6 /* CartWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FB0C4B20971860002A63C6 /* CartWebViewController.swift */; };
+		FA991C2983E295BEE9456161 /* Pods_JewishMusic_fm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A694AE50ED82FCB9E69FDC76 /* Pods_JewishMusic_fm.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8433AB7220A0F47200FDF999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 844FCB0B2091C6E0005E72C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8433AB6C20A0F47200FDF999;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8433AB7820A0F47300FDF999 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8433AB7420A0F47300FDF999 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B96D4BCE546D47F666BEBC8 /* Pods-JewishMusic.fm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JewishMusic.fm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JewishMusic.fm/Pods-JewishMusic.fm.debug.xcconfig"; sourceTree = "<group>"; };
+		470FE2D3ADCB4F6B3F0E5B24 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		8433AB6D20A0F47200FDF999 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8433AB6F20A0F47200FDF999 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		8433AB7120A0F47200FDF999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8433AB7920A0F6CF00FDF999 /* JewishMusic.fm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JewishMusic.fm.entitlements; sourceTree = "<group>"; };
+		844FCB132091C6E0005E72C8 /* JewishMusic.fm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewishMusic.fm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		844FCB162091C6E0005E72C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		844FCB182091C6E0005E72C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		844FCB1B2091C6E0005E72C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		844FCB1D2091C6E1005E72C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		844FCB202091C6E1005E72C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		844FCB222091C6E1005E72C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844FCB2C2091C7F8005E72C8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
+		844FCB2D2091C7F8005E72C8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		844FCB2F2091C824005E72C8 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		844FCB312091C828005E72C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		844FCB322091CDB5005E72C8 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		844FCB342091CEC1005E72C8 /* RecentAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentAlbumsViewController.swift; sourceTree = "<group>"; };
+		844FCB362091D6D9005E72C8 /* LeftMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewCell.swift; sourceTree = "<group>"; };
+		844FCB382091E3F7005E72C8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		844FCB3A2091E687005E72C8 /* ArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
+		844FCB3C2091E691005E72C8 /* GenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
+		844FCB3E2091E69E005E72C8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		8465E6C0209B829000E48CC5 /* AVAudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioPlayerViewController.swift; sourceTree = "<group>"; };
+		8475E3B6209DC11B006A2849 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		8475E3B8209DC23F006A2849 /* SettingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingObject.swift; sourceTree = "<group>"; };
+		84B4723A209247FF0097D566 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84B4723C209250C20097D566 /* AlbumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInfo.swift; sourceTree = "<group>"; };
+		84B4723E20925A620097D566 /* AlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewCell.swift; sourceTree = "<group>"; };
+		84B472422092C6E80097D566 /* PullDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullDataTableViewCell.swift; sourceTree = "<group>"; };
+		84B472432092C6E80097D566 /* PullDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullDataTableViewCell.xib; sourceTree = "<group>"; };
+		84B4724C2092CD910097D566 /* ArtistsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsTableViewCell.swift; sourceTree = "<group>"; };
+		84B472502092D0340097D566 /* ArtistInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfo.swift; sourceTree = "<group>"; };
+		84B472522092D5880097D566 /* GenreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreInfo.swift; sourceTree = "<group>"; };
+		84B472542092D7140097D566 /* GenresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresTableViewCell.swift; sourceTree = "<group>"; };
+		84B472562092DC960097D566 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		84B4725820933EE30097D566 /* AlbumDetailInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailInfo.swift; sourceTree = "<group>"; };
+		84B4725A209359CA0097D566 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		84BA8DF1209C63CF009914A8 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		84BA8DF3209D595E009914A8 /* PreferenceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceUtils.swift; sourceTree = "<group>"; };
+		84FB0C452096AE1B002A63C6 /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
+		84FB0C472096B9E4002A63C6 /* GenreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDetailViewController.swift; sourceTree = "<group>"; };
+		84FB0C492096BFDB002A63C6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		84FB0C4B20971860002A63C6 /* CartWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartWebViewController.swift; sourceTree = "<group>"; };
+		A694AE50ED82FCB9E69FDC76 /* Pods_JewishMusic_fm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JewishMusic_fm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB35C52D8ADAC90985AA1610 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2BBCFA86B374F0AEF0D893 /* Pods-JewishMusic.fm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JewishMusic.fm.release.xcconfig"; path = "Pods/Target Support Files/Pods-JewishMusic.fm/Pods-JewishMusic.fm.release.xcconfig"; sourceTree = "<group>"; };
+		B847740EF09B11FECD7D9E3F /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8433AB6A20A0F47200FDF999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E37136030E6DF1B4DD49CEF /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844FCB102091C6E0005E72C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA991C2983E295BEE9456161 /* Pods_JewishMusic_fm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31D91B60C8E7258118CA70BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B96D4BCE546D47F666BEBC8 /* Pods-JewishMusic.fm.debug.xcconfig */,
+				AF2BBCFA86B374F0AEF0D893 /* Pods-JewishMusic.fm.release.xcconfig */,
+				470FE2D3ADCB4F6B3F0E5B24 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				B847740EF09B11FECD7D9E3F /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		60FF58D69C3638248B90DDF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A694AE50ED82FCB9E69FDC76 /* Pods_JewishMusic_fm.framework */,
+				AB35C52D8ADAC90985AA1610 /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8433AB6E20A0F47200FDF999 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8433AB6F20A0F47200FDF999 /* NotificationService.swift */,
+				8433AB7120A0F47200FDF999 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		844FCB0A2091C6E0005E72C8 = {
+			isa = PBXGroup;
+			children = (
+				844FCB152091C6E0005E72C8 /* JewishMusic.fm */,
+				8433AB6E20A0F47200FDF999 /* OneSignalNotificationServiceExtension */,
+				844FCB142091C6E0005E72C8 /* Products */,
+				31D91B60C8E7258118CA70BC /* Pods */,
+				60FF58D69C3638248B90DDF3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		844FCB142091C6E0005E72C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				844FCB132091C6E0005E72C8 /* JewishMusic.fm.app */,
+				8433AB6D20A0F47200FDF999 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		844FCB152091C6E0005E72C8 /* JewishMusic.fm */ = {
+			isa = PBXGroup;
+			children = (
+				8433AB7920A0F6CF00FDF999 /* JewishMusic.fm.entitlements */,
+				84B4724B2092CBFD0097D566 /* Localizable */,
+				84B4724A2092CBE50097D566 /* Storyboard */,
+				84B472492092CBD20097D566 /* ViewControllers */,
+				84B472482092CBB70097D566 /* Objects */,
+				84B472472092CBA50097D566 /* Utility */,
+				84B472462092CB780097D566 /* Cell */,
+				844FCB162091C6E0005E72C8 /* AppDelegate.swift */,
+				844FCB182091C6E0005E72C8 /* ViewController.swift */,
+				844FCB1D2091C6E1005E72C8 /* Assets.xcassets */,
+				844FCB222091C6E1005E72C8 /* Info.plist */,
+			);
+			path = JewishMusic.fm;
+			sourceTree = "<group>";
+		};
+		84B472462092CB780097D566 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				844FCB362091D6D9005E72C8 /* LeftMenuTableViewCell.swift */,
+				84B4723E20925A620097D566 /* AlbumsTableViewCell.swift */,
+				84B472422092C6E80097D566 /* PullDataTableViewCell.swift */,
+				84B472432092C6E80097D566 /* PullDataTableViewCell.xib */,
+				84B4724C2092CD910097D566 /* ArtistsTableViewCell.swift */,
+				84B472542092D7140097D566 /* GenresTableViewCell.swift */,
+				84B4725A209359CA0097D566 /* TrackTableViewCell.swift */,
+				8475E3B6209DC11B006A2849 /* SettingTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		84B472472092CBA50097D566 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				84B4723A209247FF0097D566 /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		84B472482092CBB70097D566 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				84B4723C209250C20097D566 /* AlbumInfo.swift */,
+				84B472502092D0340097D566 /* ArtistInfo.swift */,
+				84B472522092D5880097D566 /* GenreInfo.swift */,
+				84B4725820933EE30097D566 /* AlbumDetailInfo.swift */,
+				84BA8DF1209C63CF009914A8 /* AudioPlayer.swift */,
+				84BA8DF3209D595E009914A8 /* PreferenceUtils.swift */,
+				8475E3B8209DC23F006A2849 /* SettingObject.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		84B472492092CBD20097D566 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				844FCB322091CDB5005E72C8 /* LeftMenuViewController.swift */,
+				844FCB342091CEC1005E72C8 /* RecentAlbumsViewController.swift */,
+				844FCB3A2091E687005E72C8 /* ArtistsViewController.swift */,
+				844FCB3C2091E691005E72C8 /* GenresViewController.swift */,
+				844FCB3E2091E69E005E72C8 /* FavoritesViewController.swift */,
+				844FCB382091E3F7005E72C8 /* SettingsViewController.swift */,
+				84B472562092DC960097D566 /* AlbumDetailViewController.swift */,
+				84FB0C452096AE1B002A63C6 /* ArtistDetailViewController.swift */,
+				84FB0C472096B9E4002A63C6 /* GenreDetailViewController.swift */,
+				84FB0C492096BFDB002A63C6 /* SearchViewController.swift */,
+				84FB0C4B20971860002A63C6 /* CartWebViewController.swift */,
+				8465E6C0209B829000E48CC5 /* AVAudioPlayerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84B4724A2092CBE50097D566 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				844FCB1A2091C6E0005E72C8 /* Main.storyboard */,
+				844FCB1F2091C6E1005E72C8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84B4724B2092CBFD0097D566 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				844FCB302091C824005E72C8 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8433AB6C20A0F47200FDF999 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8433AB7720A0F47300FDF999 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				71A15250D4794F3B8ACE1660 /* [CP] Check Pods Manifest.lock */,
+				8433AB6920A0F47200FDF999 /* Sources */,
+				8433AB6A20A0F47200FDF999 /* Frameworks */,
+				8433AB6B20A0F47200FDF999 /* Resources */,
+				068C3AE849293D5A0C24C3B3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 8433AB6D20A0F47200FDF999 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		844FCB122091C6E0005E72C8 /* JewishMusic.fm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844FCB252091C6E1005E72C8 /* Build configuration list for PBXNativeTarget "JewishMusic.fm" */;
+			buildPhases = (
+				697CC67E69FCC046EB343184 /* [CP] Check Pods Manifest.lock */,
+				844FCB0F2091C6E0005E72C8 /* Sources */,
+				844FCB102091C6E0005E72C8 /* Frameworks */,
+				844FCB112091C6E0005E72C8 /* Resources */,
+				AB7F2D3CF9D2AEE0072DF431 /* [CP] Embed Pods Frameworks */,
+				10983F7164C1ADC84A3A16A7 /* [CP] Copy Pods Resources */,
+				8433AB7820A0F47300FDF999 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8433AB7320A0F47200FDF999 /* PBXTargetDependency */,
+			);
+			name = JewishMusic.fm;
+			productName = JewishMusic.fm;
+			productReference = 844FCB132091C6E0005E72C8 /* JewishMusic.fm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		844FCB0B2091C6E0005E72C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = JewishMusic.fm;
+				TargetAttributes = {
+					8433AB6C20A0F47200FDF999 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					844FCB122091C6E0005E72C8 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 844FCB0E2091C6E0005E72C8 /* Build configuration list for PBXProject "JewishMusic.fm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 844FCB0A2091C6E0005E72C8;
+			productRefGroup = 844FCB142091C6E0005E72C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				844FCB122091C6E0005E72C8 /* JewishMusic.fm */,
+				8433AB6C20A0F47200FDF999 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8433AB6B20A0F47200FDF999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844FCB112091C6E0005E72C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844FCB212091C6E1005E72C8 /* LaunchScreen.storyboard in Resources */,
+				844FCB2E2091C824005E72C8 /* Localizable.strings in Resources */,
+				844FCB1E2091C6E1005E72C8 /* Assets.xcassets in Resources */,
+				844FCB1C2091C6E0005E72C8 /* Main.storyboard in Resources */,
+				84B472452092C6E80097D566 /* PullDataTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		068C3AE849293D5A0C24C3B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10983F7164C1ADC84A3A16A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JewishMusic.fm/Pods-JewishMusic.fm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		697CC67E69FCC046EB343184 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JewishMusic.fm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A15250D4794F3B8ACE1660 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB7F2D3CF9D2AEE0072DF431 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JewishMusic.fm/Pods-JewishMusic.fm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FAPanels/FAPanels.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ZSWTappableLabel/ZSWTappableLabel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FAPanels.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZSWTappableLabel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JewishMusic.fm/Pods-JewishMusic.fm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8433AB6920A0F47200FDF999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8433AB7020A0F47200FDF999 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844FCB0F2091C6E0005E72C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B4725920933EE30097D566 /* AlbumDetailInfo.swift in Sources */,
+				84B472442092C6E80097D566 /* PullDataTableViewCell.swift in Sources */,
+				8475E3B7209DC11B006A2849 /* SettingTableViewCell.swift in Sources */,
+				844FCB3D2091E691005E72C8 /* GenresViewController.swift in Sources */,
+				844FCB3F2091E69E005E72C8 /* FavoritesViewController.swift in Sources */,
+				84FB0C462096AE1B002A63C6 /* ArtistDetailViewController.swift in Sources */,
+				84FB0C482096B9E4002A63C6 /* GenreDetailViewController.swift in Sources */,
+				84B472552092D7140097D566 /* GenresTableViewCell.swift in Sources */,
+				84B4723D209250C20097D566 /* AlbumInfo.swift in Sources */,
+				84B472572092DC960097D566 /* AlbumDetailViewController.swift in Sources */,
+				84B472512092D0340097D566 /* ArtistInfo.swift in Sources */,
+				844FCB3B2091E688005E72C8 /* ArtistsViewController.swift in Sources */,
+				84BA8DF2209C63CF009914A8 /* AudioPlayer.swift in Sources */,
+				844FCB192091C6E0005E72C8 /* ViewController.swift in Sources */,
+				84B472532092D5880097D566 /* GenreInfo.swift in Sources */,
+				84FB0C4A2096BFDB002A63C6 /* SearchViewController.swift in Sources */,
+				844FCB172091C6E0005E72C8 /* AppDelegate.swift in Sources */,
+				84B4723B209247FF0097D566 /* Constants.swift in Sources */,
+				844FCB372091D6D9005E72C8 /* LeftMenuTableViewCell.swift in Sources */,
+				844FCB352091CEC1005E72C8 /* RecentAlbumsViewController.swift in Sources */,
+				84B4725B209359CA0097D566 /* TrackTableViewCell.swift in Sources */,
+				8475E3B9209DC23F006A2849 /* SettingObject.swift in Sources */,
+				84B4724D2092CD910097D566 /* ArtistsTableViewCell.swift in Sources */,
+				84BA8DF4209D595E009914A8 /* PreferenceUtils.swift in Sources */,
+				844FCB332091CDB5005E72C8 /* LeftMenuViewController.swift in Sources */,
+				84FB0C4C20971860002A63C6 /* CartWebViewController.swift in Sources */,
+				844FCB392091E3F7005E72C8 /* SettingsViewController.swift in Sources */,
+				84B4723F20925A620097D566 /* AlbumsTableViewCell.swift in Sources */,
+				8465E6C1209B829000E48CC5 /* AVAudioPlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8433AB7320A0F47200FDF999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8433AB6C20A0F47200FDF999 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 8433AB7220A0F47200FDF999 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		844FCB1A2091C6E0005E72C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844FCB1B2091C6E0005E72C8 /* Base */,
+				844FCB2C2091C7F8005E72C8 /* he */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		844FCB1F2091C6E1005E72C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844FCB202091C6E1005E72C8 /* Base */,
+				844FCB2D2091C7F8005E72C8 /* he */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		844FCB302091C824005E72C8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				844FCB2F2091C824005E72C8 /* he */,
+				844FCB312091C828005E72C8 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8433AB7520A0F47300FDF999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470FE2D3ADCB4F6B3F0E5B24 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amir Fekrazad (U7QS69AR32)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F3883GF5CW;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.popcoyn.Popcoyn.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4285f5f0-8e0e-4c02-8f4f-c6e1bdfa2cfe";
+				PROVISIONING_PROFILE_SPECIFIER = "Popcoyn Development Profile";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8433AB7620A0F47300FDF999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B847740EF09B11FECD7D9E3F /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amir Fekrazad (U7QS69AR32)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F3883GF5CW;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.popcoyn.Popcoyn.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4285f5f0-8e0e-4c02-8f4f-c6e1bdfa2cfe";
+				PROVISIONING_PROFILE_SPECIFIER = "Popcoyn Development Profile";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		844FCB232091C6E1005E72C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		844FCB242091C6E1005E72C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		844FCB262091C6E1005E72C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B96D4BCE546D47F666BEBC8 /* Pods-JewishMusic.fm.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JewishMusic.fm/JewishMusic.fm.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amir Fekrazad (U7QS69AR32)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F3883GF5CW;
+				INFOPLIST_FILE = JewishMusic.fm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.popcoyn.Popcoyn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4285f5f0-8e0e-4c02-8f4f-c6e1bdfa2cfe";
+				PROVISIONING_PROFILE_SPECIFIER = "Popcoyn Development Profile";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		844FCB272091C6E1005E72C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2BBCFA86B374F0AEF0D893 /* Pods-JewishMusic.fm.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JewishMusic.fm/JewishMusic.fm.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amir Fekrazad (U7QS69AR32)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F3883GF5CW;
+				INFOPLIST_FILE = JewishMusic.fm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.popcoyn.Popcoyn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4285f5f0-8e0e-4c02-8f4f-c6e1bdfa2cfe";
+				PROVISIONING_PROFILE_SPECIFIER = "Popcoyn Development Profile";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8433AB7720A0F47300FDF999 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8433AB7520A0F47300FDF999 /* Debug */,
+				8433AB7620A0F47300FDF999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844FCB0E2091C6E0005E72C8 /* Build configuration list for PBXProject "JewishMusic.fm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844FCB232091C6E1005E72C8 /* Debug */,
+				844FCB242091C6E1005E72C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844FCB252091C6E1005E72C8 /* Build configuration list for PBXNativeTarget "JewishMusic.fm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844FCB262091C6E1005E72C8 /* Debug */,
+				844FCB272091C6E1005E72C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 844FCB0B2091C6E0005E72C8 /* Project object */;
+}

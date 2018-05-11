@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  JewishMusic.fm
+
+  Created by Admin on 26/04/2018.
+  Copyright © 2018 JewishMusic.fm. All rights reserved.
+*/
+
+"Latest Albums" =  "אלבומים אחרונים";
+"Artists" = "אמנים";
+"Genres" = "ז'אנרים";
+"Favorites" = "מעודפים";
+"Settings" = "הגדרות";
+"Search" = "חפש";
+"Buy" = "עגלה";
+"About" = "אודות";
+"Information about our application" = "מידע על היישום שלנו";
+"Rate this app" = "דרג את היישום הזו";
+"Help other users enjoy this application" = "עזור למשתמשים אחרים ליהנות מהיישום הזה";
+"Select Language" = "בחר שפה";
+"Default language" = "שפת ברירת מחדל";
+"Privacy" = "פרטיות";
+"Find our privacy policy here" = "מצא את מדיניות הפרטיות שלנו כאן";
+"English" = "אנגלית";
+"Hebrew" = "עברית";
